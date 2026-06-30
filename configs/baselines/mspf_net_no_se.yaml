@@ -1,0 +1,14 @@
+extends: mspf_net.yaml
+
+training:
+  experiment_tag: no_se
+
+model:
+  use_se: false
+
+dataset_overrides:
+  D1: {model: {use_se: false}}
+  D2: {model: {use_se: false}}
+  D4: {model: {use_se: false}}
+  D5: {model: {use_se: false}}
+  D8: {model: {use_se: false}}

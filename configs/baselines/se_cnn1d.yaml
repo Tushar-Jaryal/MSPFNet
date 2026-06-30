@@ -1,0 +1,8 @@
+model:
+  name: se_cnn1d
+  width: 96
+  n_blocks: 4
+  dropout: 0.1
+
+training:
+  batch_size: 512

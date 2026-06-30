@@ -1,0 +1,6 @@
+id,name,dir_ok,n_files,readable,read_method,raw_samples,est_windows,classes_found,classes_ok,missing_classes,status,issues
+1,D1_BearingTV,True,60,True,scipy,120000000,117186,5,True,[],PASS,
+2,D2_PlanetaryGB,True,80,True,scipy,1174028288,1146511,5,True,[],PASS,
+4,D4_MultiModeGB,True,240,True,csv,2400000,2342,8,True,[],PASS,
+5,D5_MixedBG,True,64,True,csv,640000,624,15,True,[],PASS,
+8,D8_HUSTGearbox,True,90,True,txt,23592960,23039,3,True,[],PASS,

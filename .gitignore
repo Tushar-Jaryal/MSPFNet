@@ -1,0 +1,66 @@
+# OS / editor
+.DS_Store
+.vscode/
+.claude/
+.idea/
+.cache/
+.tmp/
+.docs/
+
+# Python caches / build artifacts
+__pycache__/
+*.py[cod]
+*.so
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+build/
+dist/
+
+# Local environments
+.venv/
+venv/
+.env
+
+# Thesis / notebooks scratch
+/thesis/
+.ipynb_checkpoints/
+THESIS_EVALUATION_PLAN.md
+THESIS_EVALUATION_PLAN_VISUAL.md
+CODEBASE_IMPLEMENTATION_PRESENTATION.md
+
+# Raw and generated data
+/data/raw/
+/data/processed/
+/data/unified/
+
+# Optional large packaged data drops
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.7z
+*.pt
+
+# macOS / temp runtime artifacts
+*.swp
+*.swo
+
+# Embedded deployment artifacts
+embedded/bundles/*
+!embedded/bundles/.gitkeep
+embedded/results/*.json
+embedded/results/**/*.bak
+
+# Large training artifacts
+results/baselines/
+results/logs/
+results/**/*.log
+results/baselines/**/fold_*/
+results/baselines/**/checkpoints/
+results/baselines/**/*.pt
+results/baselines/**/*_cv*_summary.json
+results/baselines/**/logs/

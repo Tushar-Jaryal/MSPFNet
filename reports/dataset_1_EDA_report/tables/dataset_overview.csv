@@ -1,0 +1,2 @@
+num_files,num_channel_rows,channels,faults,conditions,trials,min_signal_length,max_signal_length,missing_values_total,non_finite_total
+60,120,"['Channel_1', 'Channel_2']","['B', 'C', 'H', 'I', 'O']","['A', 'B', 'C', 'D']","[1, 2, 3]",2000000,2000000,0,0

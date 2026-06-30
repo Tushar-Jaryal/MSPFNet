@@ -1,0 +1,6 @@
+dataset_id,dataset_label,dataset_name,n_channels,n_rows_analyzed,median_period_samples,p75_period_samples,max_period_samples,recommended_window_samples,recommended_window_ms,heuristic
+1,D1,D1_BearingTV,1,5,120.0,120.0,124.0,512,2.56,"next_pow2(max(4*median_period, 2*p75_period, 256))"
+2,D2,D2_PlanetaryGB,4,20,1257.5,3006.75,9620.0,8192,170.66666666666666,"next_pow2(max(4*median_period, 2*p75_period, 256))"
+4,D4,D4_MultiModeGB,8,64,21.5,64.75,4352.0,2048,204.8,"next_pow2(max(4*median_period, 2*p75_period, 256))"
+5,D5,D5_MixedBG,3,45,15.0,28.0,3191.0,256,25.6,"next_pow2(max(4*median_period, 2*p75_period, 256))"
+8,D8,D8_HUSTGearbox,4,12,2605.5,3908.25,3927.0,8192,320.0,"next_pow2(max(4*median_period, 2*p75_period, 256))"

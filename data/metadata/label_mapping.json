@@ -1,0 +1,201 @@
+{
+  "_comment": "Unified fault label definitions for MSPF-Net across all current datasets",
+  "_version": "1.0",
+
+  "fault_codes": {
+    "NOR":    { "label": "Normal",                   "component": "any",     "description": "Healthy / no fault state" },
+    "BRG_IR": { "label": "Bearing_Inner_Race",        "component": "bearing", "description": "Inner race defect (BPFI excitation)" },
+    "BRG_OR": { "label": "Bearing_Outer_Race",        "component": "bearing", "description": "Outer race defect (BPFO excitation)" },
+    "BRG_BF": { "label": "Bearing_Ball",              "component": "bearing", "description": "Rolling element / ball defect (BSF)" },
+    "BRG_CF": { "label": "Bearing_Combined",          "component": "bearing", "description": "Multiple bearing fault modes simultaneously" },
+    "BRG_IO": { "label": "Bearing_Inner_Outer",       "component": "bearing", "description": "Inner race + outer race combined" },
+    "GBX_BT": { "label": "Gear_Broken_Tooth",         "component": "gearbox", "description": "Broken / fractured gear tooth" },
+    "GBX_MT": { "label": "Gear_Missing_Tooth",        "component": "gearbox", "description": "Completely missing gear tooth" },
+    "GBX_RC": { "label": "Gear_Root_Crack",           "component": "gearbox", "description": "Tooth root crack" },
+    "GBX_WR": { "label": "Gear_Wear",                 "component": "gearbox", "description": "General gear wear condition" },
+    "GBX_PT": { "label": "Gear_Pitting",              "component": "gearbox", "description": "Surface pitting on gear tooth" },
+    "GBX_CK": { "label": "Gear_Crack",                "component": "gearbox", "description": "Gear tooth crack (not root)" },
+    "GBX_EG": { "label": "Gear_Eccentric",            "component": "gearbox", "description": "Eccentric gear / eccentricity fault" },
+    "GBX_CF": { "label": "Gear_Combined",             "component": "gearbox", "description": "Multiple gear fault modes" },
+    "MIX_II": { "label": "Mixed_IR_EccentricGear",    "component": "mixed",   "description": "Bearing inner race + eccentric gear" },
+    "MIX_IS": { "label": "Mixed_IR_GearWear",         "component": "mixed",   "description": "Bearing inner race + gear wear" },
+    "MIX_IB": { "label": "Mixed_IR_GearBrokenTooth",  "component": "mixed",   "description": "Bearing inner race + broken gear tooth" },
+    "MIX_OI": { "label": "Mixed_OR_EccentricGear",    "component": "mixed",   "description": "Bearing outer race + eccentric gear" },
+    "MIX_OS": { "label": "Mixed_OR_GearWear",         "component": "mixed",   "description": "Bearing outer race + gear wear" },
+    "MIX_OB": { "label": "Mixed_OR_GearBrokenTooth",  "component": "mixed",   "description": "Bearing outer race + broken gear tooth" },
+    "MIX_TI": { "label": "Mixed_GearBrokenTooth_IR",  "component": "mixed",   "description": "Broken gear tooth + bearing inner race" },
+    "MIX_TO": { "label": "Mixed_GearBrokenTooth_OR",  "component": "mixed",   "description": "Broken gear tooth + bearing outer race" }
+  },
+
+  "coarse_fault_map": {
+    "NOR": "NOR",
+    "BRG_IR": "BRG_SINGLE",
+    "BRG_OR": "BRG_SINGLE",
+    "BRG_BF": "BRG_SINGLE",
+    "BRG_CF": "BRG_COMBINED",
+    "BRG_IO": "BRG_COMBINED",
+    "GBX_BT": "GBX_TOOTH_DAMAGE",
+    "GBX_MT": "GBX_TOOTH_DAMAGE",
+    "GBX_RC": "GBX_CRACK",
+    "GBX_CK": "GBX_CRACK",
+    "GBX_WR": "GBX_WEAR",
+    "GBX_PT": "GBX_WEAR",
+    "GBX_EG": "GBX_ECCENTRIC",
+    "GBX_CF": "GBX_COMBINED",
+    "MIX_IB": "MIXED",
+    "MIX_II": "MIXED",
+    "MIX_IS": "MIXED",
+    "MIX_OB": "MIXED",
+    "MIX_OI": "MIXED",
+    "MIX_OS": "MIXED",
+    "MIX_TI": "MIXED",
+    "MIX_TO": "MIXED"
+  },
+
+  "severity_codes": {
+    "H": "High",
+    "M": "Medium",
+    "L": "Low",
+    "NA": "Not Applicable"
+  },
+
+  "dataset_class_maps": {
+    "dataset_1": {
+      "fault_prefix_map": {
+        "H": "NOR",
+        "B": "BRG_BF",
+        "C": "BRG_CF",
+        "I": "BRG_IR",
+        "O": "BRG_OR"
+      },
+      "condition_map": {
+        "A": { "description": "Condition A (speed profile 1)", "speed_range": "varies" },
+        "B": { "description": "Condition B (speed profile 2)", "speed_range": "varies" },
+        "C": { "description": "Condition C (speed profile 3)", "speed_range": "varies" },
+        "D": { "description": "Condition D (speed profile 4)", "speed_range": "varies" }
+      },
+      "class_ids": { "NOR": 0, "BRG_BF": 1, "BRG_CF": 2, "BRG_IR": 3, "BRG_OR": 4 }
+    },
+
+    "dataset_2": {
+      "folder_map": {
+        "healthy":      "NOR",
+        "broken":       "GBX_BT",
+        "missing_tooth":"GBX_MT",
+        "root_crack":   "GBX_RC",
+        "wear":         "GBX_WR"
+      },
+      "speed_hz_to_rpm": "multiply_by_60",
+      "class_ids": { "NOR": 0, "GBX_BT": 1, "GBX_MT": 2, "GBX_RC": 3, "GBX_WR": 4 }
+    },
+
+    "dataset_3": {
+      "sub_datasets": {
+        "bearing_cwru": {
+          "prefix_map": {
+            "B":      "BRG_BF",
+            "IR":     "BRG_IR",
+            "OR":     "BRG_OR",
+            "normal": "NOR"
+          },
+          "load_hp_map": { "0": "0HP", "1": "1HP", "2": "2HP", "3": "3HP" },
+          "class_ids": { "NOR": 0, "BRG_IR": 1, "BRG_OR": 2, "BRG_BF": 3 }
+        },
+        "gearbox_bearing": {
+          "prefix_map": {
+            "health": "NOR",
+            "inner":  "BRG_IR",
+            "outer":  "BRG_OR",
+            "ball":   "BRG_BF",
+            "comb":   "BRG_CF"
+          },
+          "class_ids": { "NOR": 0, "BRG_IR": 1, "BRG_OR": 2, "BRG_BF": 3, "BRG_CF": 4 }
+        },
+        "gearbox_gearset": {
+          "prefix_map": {
+            "Health":  "NOR",
+            "Chipped": "GBX_BT",
+            "Miss":    "GBX_MT",
+            "Root":    "GBX_RC",
+            "Surface": "GBX_WR"
+          },
+          "class_ids": { "NOR": 0, "GBX_BT": 1, "GBX_MT": 2, "GBX_RC": 3, "GBX_WR": 4 }
+        }
+      }
+    },
+
+    "dataset_4": {
+      "prefix_map": {
+        "health":                          "NOR",
+        "gear_pitting":                    "GBX_PT",
+        "gear_wear":                       "GBX_WR",
+        "miss_teeth":                      "GBX_MT",
+        "teeth_break":                     "GBX_BT",
+        "teeth_crack":                     "GBX_CK",
+        "teeth_break_and_bearing_inner":   "MIX_TI",
+        "teeth_break_and_bearing_outer":   "MIX_TO"
+      },
+      "class_ids": {
+        "NOR": 0, "GBX_PT": 1, "GBX_WR": 2, "GBX_MT": 3,
+        "GBX_BT": 4, "GBX_CK": 5, "MIX_TI": 6, "MIX_TO": 7
+      }
+    },
+
+    "dataset_5": {
+      "bearing_map": {
+        "Normal":  "NOR",
+        "IF":      "BRG_IR",
+        "OF":      "BRG_OR",
+        "BF":      "BRG_BF",
+        "CF":      "BRG_CF",
+        "IF+OF":   "BRG_IO"
+      },
+      "gearbox_map": {
+        "normal":           "NOR",
+        "eccentric gear":   "GBX_EG",
+        "gear surface wear":"GBX_WR",
+        "gear tooth break": "GBX_BT"
+      },
+      "mixed_map": {
+        "IF+eccentric gear":    "MIX_II",
+        "IF+gear surface wear": "MIX_IS",
+        "IF+gear tooth break":  "MIX_IB",
+        "OF+eccentric gear":    "MIX_OI",
+        "OF+gear surface wear": "MIX_OS",
+        "OF+gear tooth break":  "MIX_OB"
+      },
+      "class_ids": {
+        "NOR": 0,
+        "BRG_IR": 1, "BRG_OR": 2, "BRG_BF": 3, "BRG_CF": 4, "BRG_IO": 5,
+        "GBX_EG": 6, "GBX_WR": 7, "GBX_BT": 8,
+        "MIX_II": 9, "MIX_IS": 10, "MIX_IB": 11,
+        "MIX_OI": 12, "MIX_OS": 13, "MIX_OB": 14
+      }
+    },
+
+    "dataset_6": {
+      "state_map": {
+        "h": "NOR",
+        "b": "GBX_BT"
+      },
+      "class_ids": { "NOR": 0, "GBX_BT": 1 }
+    },
+
+    "dataset_7": {
+      "state_map": {
+        "H": "NOR",
+        "D": "GBX_CF"
+      },
+      "class_ids": { "NOR": 0, "GBX_CF": 1 }
+    },
+
+    "dataset_8": {
+      "prefix_map": {
+        "H": "NOR",
+        "B": "GBX_BT",
+        "M": "GBX_MT"
+      },
+      "class_ids": { "NOR": 0, "GBX_BT": 1, "GBX_MT": 2 }
+    }
+  }
+}

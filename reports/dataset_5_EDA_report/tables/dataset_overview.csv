@@ -1,0 +1,2 @@
+dataset_id,dataset_label,num_files,num_channel_rows,channels,primary_channel,faults,conditions,min_original_length,max_original_length,missing_values_total,non_finite_total,any_stats_sampled
+5,D5,64,192,"['Channel_1', 'Channel_2', 'Channel_3']",Channel_2,"['BRG_BF', 'BRG_CF', 'BRG_IO', 'BRG_IR', 'BRG_OR', 'GBX_BT', 'GBX_EG', 'GBX_WR', 'MIX_IB', 'MIX_II', 'MIX_IS', 'MIX_OB', 'MIX_OI', 'MIX_OS', 'NOR']","['1200rpm', '1800rpm', '200-2400-200', '2400rpm']",480000,480000,0,0,False

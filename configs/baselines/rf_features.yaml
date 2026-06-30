@@ -1,0 +1,10 @@
+model:
+  name: rf_features
+  n_estimators: 300
+  max_depth: null
+  max_features: sqrt
+  min_samples_split: 2
+  n_jobs: -1
+
+training:
+  batch_size: 1024

@@ -1,0 +1,7 @@
+check,passed
+All filenames follow expected pattern,True
+All channels numeric,True
+All channels have zero missing values,True
+All channels have complete finite values,True
+All signal lengths are equal,True
+Every file has exactly 2 channels,True

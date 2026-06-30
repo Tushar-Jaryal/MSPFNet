@@ -1,0 +1,9 @@
+extends: mspf_net.yaml
+
+training:
+  experiment_tag: no_periodic_path
+
+model:
+  min_periodic_gate: 0.0
+  max_periodic_gate: 0.0
+  use_nonstationary_path: true

@@ -1,0 +1,18 @@
+model:
+  name: transformer1d
+  d_model: 256
+  n_heads: 8
+  n_layers: 4
+  patch_size: 16
+  dropout: 0.1
+
+training:
+  batch_size: 256
+
+dataset_overrides:
+  D2:
+    training:
+      batch_size: 48
+  D8:
+    training:
+      batch_size: 48

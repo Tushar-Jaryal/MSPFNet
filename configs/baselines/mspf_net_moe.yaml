@@ -1,0 +1,19 @@
+# Two-expert MoE: CWT scalogram vs CNN/spectral (non-periodic). No dataset ID at inference.
+extends: mspf_net.yaml
+
+profile: mspf_moe
+
+training:
+  experiment_tag: moe
+
+model:
+  architecture: moe
+  use_nonstationary_path: false
+
+  # Router
+  router_hidden: 128
+  router_temperature: 1.0
+  router_entropy_weight: 0.0
+
+  # Non-periodic expert: "cnn" (default) or "spectral" (1D conv on CWT bands)
+  moe_non_periodic_expert: cnn

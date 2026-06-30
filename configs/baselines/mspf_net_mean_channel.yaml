@@ -1,0 +1,14 @@
+extends: mspf_net.yaml
+
+training:
+  experiment_tag: mean_channel_pooling
+
+model:
+  channel_pooling: mean
+
+dataset_overrides:
+  D1: {model: {channel_pooling: mean}}
+  D2: {model: {channel_pooling: mean}}
+  D4: {model: {channel_pooling: mean}}
+  D5: {model: {channel_pooling: mean}}
+  D8: {model: {channel_pooling: mean}}

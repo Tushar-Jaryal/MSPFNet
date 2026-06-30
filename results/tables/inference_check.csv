@@ -1,0 +1,2 @@
+model,dataset_id,target,experiment_tag,status,mean_ms,std_ms,target_ok,params,flops_g,window_shape,training_inference_ms,device,results_json,error
+mspf_net,1,D1,softmax,ok,8.286,0.92,True,740368,0.4054,"[1, 512]",0.05510380688065197,cpu,/Volumes/Seagate/MSPF-Net/results/baselines/mspf_net/processed/d1/mspf_net_d1_softmax_results.json,

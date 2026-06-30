@@ -1,0 +1,7 @@
+extends: mspf_net.yaml
+
+training:
+  experiment_tag: no_nonstationary_path
+
+model:
+  use_nonstationary_path: false

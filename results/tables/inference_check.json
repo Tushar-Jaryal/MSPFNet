@@ -1,0 +1,52 @@
+[
+  {
+    "model": "mspf_net",
+    "dataset_id": 1,
+    "target": "D1",
+    "experiment_tag": "softmax",
+    "status": "ok",
+    "results_json": "/Volumes/Seagate/MSPF-Net/results/baselines/mspf_net/processed/d1/mspf_net_d1_softmax_results.json",
+    "device": "cpu",
+    "device_info": {
+      "device": "cpu",
+      "torch_version": "2.13.0.dev20260507",
+      "mps_available": true,
+      "cuda_available": false,
+      "dtype": "float32",
+      "platform": "CPU"
+    },
+    "window_shape": [
+      1,
+      512
+    ],
+    "input_shape": [
+      1,
+      1,
+      512
+    ],
+    "logits_shape": [
+      1,
+      5
+    ],
+    "params": 740368,
+    "latency": {
+      "device": "cpu",
+      "mean_ms": 8.286,
+      "std_ms": 0.92,
+      "min_ms": 6.845,
+      "max_ms": 10.742,
+      "n_runs": 20,
+      "target_ok": true
+    },
+    "flops": {
+      "macs": 202700160,
+      "params": 707536,
+      "flops_g": 0.4054,
+      "params_m": 0.708
+    },
+    "training_inference_ms": 0.05510380688065197,
+    "mean_ms": 8.286,
+    "target_ok": true,
+    "note": "MPS fallback: The operator 'aten::logspace.out' is not currently implemented for the MPS device. If you want this op to be considered for addition please comment on https://github.com/pytorch/pytorch/issues/141287 and mention use-case, that resulted in missing op as well as commit hash 125fa20ad71be37200cf7433f2623fb5295651d0. As a temporary fix, you can set the environment variable `PYTORCH_ENABLE_MPS_FALLBACK=1` to use the CPU as a fallback for this op. WARNING: this will be slower than running natively on MPS."
+  }
+]

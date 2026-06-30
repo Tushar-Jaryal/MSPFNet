@@ -1,0 +1,22 @@
+model:
+  name: timesnet
+  d_model: 64
+  d_ff: 128
+  n_layers: 3
+  n_heads: 4
+  top_k: 5
+  num_kernels: 3
+  dropout: 0.1
+
+training:
+  batch_size: 256
+  lr: 0.001
+  weight_decay: 0.0001
+
+dataset_overrides:
+  D2:
+    training:
+      batch_size: 64
+  D8:
+    training:
+      batch_size: 64
