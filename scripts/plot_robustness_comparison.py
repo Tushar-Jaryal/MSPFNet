@@ -22,6 +22,36 @@ from mspf_net.utils.aggregate_robustness import (
 )
 
 
+# Canonical run per model for the cross-model comparison figures: the evaluated
+# softmax MSPF-Net and the recommended_fine baselines. This keeps MSPF-Net's many
+# ablation/variant runs out of the cross-model heatmaps, where they would
+# otherwise let MSPF-Net be compared on a best-of-variants basis against
+# single-run baselines.
+CANONICAL_MSPF_TAG = "softmax"
+BASELINE_TAG = "recommended_fine"
+
+
+def canonical_runs(df: pd.DataFrame) -> pd.DataFrame:
+    """Filter a cross-model table to one canonical run per model.
+
+    Keeps the softmax MSPF-Net run and the recommended_fine baseline runs. Rows
+    are matched on ``experiment_tag``; if that column is absent the table is
+    returned unchanged. Models with no canonical run are dropped (and reported)
+    rather than represented by an arbitrary or best-scoring variant.
+    """
+    if df.empty or "experiment_tag" not in df.columns:
+        return df
+    is_mspf = df["model"] == "mspf_net"
+    keep = (is_mspf & (df["experiment_tag"] == CANONICAL_MSPF_TAG)) | (
+        ~is_mspf & (df["experiment_tag"] == BASELINE_TAG)
+    )
+    filtered = df[keep].copy()
+    dropped = sorted(set(df["model"]) - set(filtered["model"]))
+    if dropped:
+        print(f"  [canonical_runs] no canonical run for: {', '.join(dropped)} (dropped)")
+    return filtered
+
+
 def _plot_heatmap(
     df: pd.DataFrame,
     plot_path: Path,
@@ -33,11 +63,13 @@ def _plot_heatmap(
 ) -> None:
     if df.empty or value_col not in df.columns:
         return
-    plot_df = (
-        df.dropna(subset=[value_col])
-        .sort_values(value_col, ascending=False)
-        .drop_duplicates([row_col, "target"], keep="first")
-    )
+    # Deterministic dedup: keep the most recent run per (row, target). Never
+    # select by metric value, which would bias a heatmap toward a model's best
+    # run when several runs/variants are present in the input table.
+    plot_df = df.dropna(subset=[value_col]).copy()
+    if "mtime" in plot_df.columns:
+        plot_df = plot_df.sort_values("mtime", ascending=False)
+    plot_df = plot_df.drop_duplicates([row_col, "target"], keep="first")
     if plot_df.empty:
         return
     pivot = plot_df.pivot(index=row_col, columns="target", values=value_col)
@@ -117,7 +149,11 @@ def main() -> int:
 
     target_order = sorted(ROBUSTNESS_TARGETS)
 
-    phase4_df = _load_csv(phase4_csv)
+    # Cross-model comparison uses only the canonical run per model (softmax
+    # MSPF-Net + recommended_fine baselines), so MSPF-Net's variants cannot be
+    # max-selected against single-run baselines. The MSPF-variant figures below
+    # are plotted from the separate mspf_net CSV and are intentionally unfiltered.
+    phase4_df = canonical_runs(_load_csv(phase4_csv))
     if not phase4_df.empty:
         _plot_heatmap(
             phase4_df,
