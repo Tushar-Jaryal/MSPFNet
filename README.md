@@ -32,22 +32,6 @@ MSPF-Net/
 └── pyproject.toml           # Editable package metadata
 ```
 
-## What Is Not Tracked
-
-The following are intentionally ignored and should not be committed:
-
-```text
-data.zip
-data/raw/
-data/processed/
-data/unified/
-embedded/bundles/
-results/baselines/
-thesis/
-```
-
-Raw data, processed arrays, unified `.npy` exports, checkpoints, and embedded bundles are large generated artifacts. Keep them locally, but do not publish them in Git.
-
 ## Setup
 
 Create the environment:
@@ -65,9 +49,13 @@ conda activate mspf_net
 pip install -e .
 ```
 
-## Data Location
+## Data
 
-Place raw datasets under:
+The dataset files are available from Google Drive:
+
+[MSPF-Net data folder](https://drive.google.com/drive/folders/1QaCOWctCfAHH4ixc7Dq2EWfnnWCmI_Xo?usp=sharing)
+
+Download the data and place the raw datasets under:
 
 ```text
 data/raw/dataset_1/
@@ -77,7 +65,7 @@ data/raw/dataset_5/
 data/raw/dataset_8/
 ```
 
-The cleaned repo keeps only lightweight metadata and catalog files. The full raw and processed data must be restored locally before running the full pipeline.
+The repository includes lightweight metadata, catalogs, final tables, and final figures. Raw data and generated arrays should be restored locally before running the full pipeline.
 
 ## Recreate The Thesis Pipeline
 
@@ -629,22 +617,4 @@ Raspberry Pi 5 export and benchmark instructions are in:
 
 ```text
 embedded/README.md
-```
-
-## Git Safety Before Publishing
-
-Before committing, verify that large data and checkpoints are not staged:
-
-```bash
-git add --dry-run .
-git add .
-git diff --cached --name-only | grep -E '\.(pt|npy|zip|tar\.gz)$|^data/(raw|processed|unified)/'
-```
-
-The final command should print nothing.
-
-Then commit:
-
-```bash
-git commit -m "Initial thesis code release"
 ```
