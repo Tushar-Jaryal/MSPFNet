@@ -1,0 +1,7 @@
+extends: mspf_net.yaml
+
+training:
+  experiment_tag: equal_path_fusion
+
+model:
+  path_fusion_mode: equal

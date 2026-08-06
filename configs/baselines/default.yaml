@@ -1,0 +1,44 @@
+paths:
+  processed_dir: data/processed
+  unified_dir: data/unified
+  results_dir: results/baselines
+
+data:
+  mode: processed
+  dataset_ids: [1]
+  group_id: null
+  label_space: fine
+  exclude_ineligible: true
+
+training:
+  seed: 42
+  device: auto
+  epochs: 100
+  batch_size: 256
+  lr: 0.001
+  weight_decay: 0.0001
+  patience: 20
+  scheduler: cosine
+  num_workers: 8
+  use_class_weights: true
+  unified_sampling: dataset_balanced
+
+dataset_overrides:
+  D1:
+    training:
+      batch_size: 512
+  D2:
+    training:
+      batch_size: 128
+  D4:
+    training:
+      batch_size: 512
+  D5:
+    training:
+      batch_size: 2048
+  D8:
+    training:
+      batch_size: 128
+
+model:
+  name: baseline

@@ -1,0 +1,35 @@
+name: mspf_net
+channels:
+  - pytorch
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10
+  - pip
+  - numpy
+  - pandas
+  - scipy
+  - scikit-learn
+  - matplotlib
+  - seaborn
+  - pyyaml
+  - requests
+  - pytorch
+  - torchvision
+  - torchaudio
+  - pip:
+      - einops
+      - h5py
+      - hydra-core
+      - imbalanced-learn
+      - plotly
+      - psutil
+      - pytest
+      - pywavelets
+      - shap
+      - tensorboard
+      - thop
+      - timm
+      - tqdm
+      - umap-learn
+      - wandb

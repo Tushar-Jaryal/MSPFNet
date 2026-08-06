@@ -1,0 +1,8 @@
+model:
+  name: inception_time
+  width: 96        # 3 branches (k=3, k=9, k=19) × width=96 × 4 blocks ≈ 1.3M params
+  n_blocks: 4
+  dropout: 0.1
+
+training:
+  batch_size: 512

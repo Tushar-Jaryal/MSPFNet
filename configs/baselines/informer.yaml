@@ -1,0 +1,9 @@
+model:
+  name: informer
+  d_model: 64
+  n_heads: 4
+  n_layers: 2
+  dropout: 0.1
+
+training:
+  batch_size: 512

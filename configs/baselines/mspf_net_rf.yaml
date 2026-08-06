@@ -1,0 +1,7 @@
+extends: mspf_net.yaml
+
+training:
+  experiment_tag: rf
+
+model:
+  classifier_head: rf

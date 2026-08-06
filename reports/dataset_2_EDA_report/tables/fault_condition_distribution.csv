@@ -1,0 +1,6 @@
+fault,sensor1_spd20hz,sensor1_spd25hz,sensor1_spd30hz,sensor1_spd35hz,sensor1_spd40hz,sensor1_spd45hz,sensor1_spd50hz,sensor1_spd55hz,sensor2_spd20hz,sensor2_spd25hz,sensor2_spd30hz,sensor2_spd35hz,sensor2_spd40hz,sensor2_spd45hz,sensor2_spd50hz,sensor2_spd55hz
+GBX_BT,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+GBX_MT,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+GBX_RC,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+GBX_WR,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+NOR,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1

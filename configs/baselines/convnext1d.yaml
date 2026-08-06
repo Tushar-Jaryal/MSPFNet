@@ -1,0 +1,8 @@
+model:
+  name: convnext1d
+  width: 64
+  n_blocks: 4
+  dropout: 0.1
+
+training:
+  batch_size: 512

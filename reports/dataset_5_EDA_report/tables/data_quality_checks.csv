@@ -1,0 +1,5 @@
+check,passed
+All channels numeric,True
+All channels have zero missing values,True
+All channels have complete finite values,True
+At least one file per class,True

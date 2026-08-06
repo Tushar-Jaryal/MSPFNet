@@ -1,0 +1,123 @@
+defaults:
+  - _self_
+  - dataset: dataset_5
+  - model: mspf_net
+  - training: default
+
+project:
+  name:      "MSPF-Net"
+  root:      "${hydra:runtime.cwd}"
+  seed:      42
+  device:    "auto"
+
+paths:
+  data_raw:             "data/raw"
+  data_processed:       "data/processed"
+  data_processed_fixed: "data/processed_fixed"
+  data_unified:         "data/unified"
+  checkpoints:          "models/mspf_net/checkpoints"
+  results:              "results"
+  figures:              "results/figures"
+  tables:               "results/tables"
+  logs:                 "results/logs"
+
+datasets:
+  active_raw:      [1, 2, 4, 5, 8]
+  active_thesis:   [1, 2, 4, 5, 8]
+  primary_scratch: [1, 2, 4, 5, 8]
+  mspf_ablation:   [1, 2, 4, 5, 8]
+
+unified:
+  view: component_md
+  groups: [bearing_md, gearbox_md]
+  n_segments: 64
+
+phase4:
+  epochs: 100
+  batch_size: 256          # 48 GB A6000 default; override per model/dataset in YAML
+  # Training runs log batch_size, effective_batch_size, and peak GPU/RSS memory in *_results.json
+  lr: 0.001
+  weight_decay: 0.0001
+  patience: 20
+  scheduler: cosine
+  num_workers: 8
+  unified_sampling: dataset_balanced
+  use_class_weights: true
+  device: auto
+  results_dir: results/baselines
+  fixed_window_size: 2048
+  fixed_hop_size: 1024
+
+# ─── Global Windowing ───────────────────────────────────────────────────────
+windowing:
+  default_window_size: 2048
+  default_hop_size:    null       # null = derive from overlap_ratio / 50% overlap
+  per_dataset:
+    "1":
+      window_size: 512
+      hop_size: 256
+    "2":
+      window_size: 8192
+      hop_size: 4096
+    "4":
+      window_size: 2048
+      hop_size: 1024
+    "5":
+      window_size: 256
+      hop_size: 128
+    "8":
+      window_size: 8192
+      hop_size: 4096
+
+# ─── Preprocessing ─────────────────────────────────────────────────────────
+preprocessing:
+  window_size:        ${windowing.default_window_size}
+  overlap_ratio:      0.5
+  fs_target:          10000       # Hz — all datasets resampled to this
+  normalize:          "zscore"
+  apply_bandpass:     true
+  augmentation:
+    enabled:          true
+    noise_snr_db:     [10, 5, 0]
+    jitter_pct:       0.1
+    amplitude_scale:  [0.8, 1.2]
+
+# ─── TimesNet Backbone ──────────────────────────────────────────────────────
+timesnet:
+  top_k_periods:      3           # K dominant periods to detect
+  d_model:            64          # base embedding dimension
+
+# ─── MixNet Multi-Scale Block ───────────────────────────────────────────────
+mixnet:
+  kernel_sizes:       [3, 5, 7, 9]
+  base_filters:       64          # filters per branch
+  n_blocks:           2           # number of stacked multi-scale blocks
+  depthwise_sep:      true
+  fusion:             "concat"
+
+# ─── Random Forest Classifier ───────────────────────────────────────────────
+random_forest:
+  n_estimators:       300
+  max_depth:          null        # null = grow full trees
+  max_features:       "sqrt"
+  min_samples_split:  2
+  n_jobs:             -1          # use all CPU cores
+  random_state:       42
+
+# ─── Feature Vector ─────────────────────────────────────────────────────────
+feature:
+  dim:                256         # d — output of GAP + projection layer
+  l2_normalize:       true
+
+# ─── Evaluation ─────────────────────────────────────────────────────────────
+evaluation:
+  metrics:            ["accuracy", "f1_macro", "precision", "recall"]
+  noise_snr_levels:   [10, 5, 0]  # dB — for robustness tests
+  latency_n_runs:     1000        # number of inferences to time
+
+# ─── Logging ────────────────────────────────────────────────────────────────
+logging:
+  use_wandb:          false
+  wandb_project:      "MSPF-Net"
+  use_tensorboard:    true
+  log_interval:       10

@@ -1,0 +1,2 @@
+dataset_id,dataset_label,num_files,num_channel_rows,channels,primary_channel,faults,conditions,min_original_length,max_original_length,missing_values_total,non_finite_total,any_stats_sampled
+8,D8,90,360,"['Channel_1', 'Channel_2', 'Channel_3', 'Channel_4']",Channel_2,"['GBX_BT', 'GBX_MT', 'NOR']","['L0_VS_0_40', 'L1_VS_0_40', 'L2_VS_0_40', 'L3_VS_0_40', 'L4_VS_0_40', 'spd20hz', 'spd25hz', 'spd30hz', 'spd35hz', 'spd40hz']",262144,262144,0,0,False

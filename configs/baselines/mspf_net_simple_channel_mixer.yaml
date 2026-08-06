@@ -1,0 +1,9 @@
+extends: mspf_net.yaml
+
+training:
+  experiment_tag: simple_channel_mixer
+
+model:
+  use_early_channel_mixer: true
+  use_sensor_fusion_stem: true
+  sensor_fusion_mode: simple_mixer

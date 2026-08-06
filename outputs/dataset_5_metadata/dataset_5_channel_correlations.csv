@@ -1,0 +1,193 @@
+filename,file_path,fault,condition,channel_a,channel_b,correlation,channel_1_2_correlation
+BF_1200.csv,data/raw/dataset_5/Bearing Dataset/BF_1200.csv,BRG_BF,1200rpm,Channel_1,Channel_2,0.2157598747486954,0.2157598747486954
+BF_1200.csv,data/raw/dataset_5/Bearing Dataset/BF_1200.csv,BRG_BF,1200rpm,Channel_1,Channel_3,-0.3394073048720321,
+BF_1200.csv,data/raw/dataset_5/Bearing Dataset/BF_1200.csv,BRG_BF,1200rpm,Channel_2,Channel_3,-0.2516780190967918,
+BF_1800.csv,data/raw/dataset_5/Bearing Dataset/BF_1800.csv,BRG_BF,1800rpm,Channel_1,Channel_2,-0.03257645281319708,-0.03257645281319708
+BF_1800.csv,data/raw/dataset_5/Bearing Dataset/BF_1800.csv,BRG_BF,1800rpm,Channel_1,Channel_3,-0.15524100842478517,
+BF_1800.csv,data/raw/dataset_5/Bearing Dataset/BF_1800.csv,BRG_BF,1800rpm,Channel_2,Channel_3,-0.11755170507853274,
+BF_200-2400-200.csv,data/raw/dataset_5/Bearing Dataset/BF_200-2400-200.csv,BRG_BF,200-2400-200,Channel_1,Channel_2,-0.06832913873776027,-0.06832913873776027
+BF_200-2400-200.csv,data/raw/dataset_5/Bearing Dataset/BF_200-2400-200.csv,BRG_BF,200-2400-200,Channel_1,Channel_3,-0.140810103091094,
+BF_200-2400-200.csv,data/raw/dataset_5/Bearing Dataset/BF_200-2400-200.csv,BRG_BF,200-2400-200,Channel_2,Channel_3,-0.07007200553729961,
+BF_2400.csv,data/raw/dataset_5/Bearing Dataset/BF_2400.csv,BRG_BF,2400rpm,Channel_1,Channel_2,-0.17417614309563875,-0.17417614309563875
+BF_2400.csv,data/raw/dataset_5/Bearing Dataset/BF_2400.csv,BRG_BF,2400rpm,Channel_1,Channel_3,-0.07327043166513826,
+BF_2400.csv,data/raw/dataset_5/Bearing Dataset/BF_2400.csv,BRG_BF,2400rpm,Channel_2,Channel_3,-0.05353102007034278,
+CF_1200.csv,data/raw/dataset_5/Bearing Dataset/CF_1200.csv,BRG_CF,1200rpm,Channel_1,Channel_2,0.2051399710089664,0.2051399710089664
+CF_1200.csv,data/raw/dataset_5/Bearing Dataset/CF_1200.csv,BRG_CF,1200rpm,Channel_1,Channel_3,-0.30158498994687005,
+CF_1200.csv,data/raw/dataset_5/Bearing Dataset/CF_1200.csv,BRG_CF,1200rpm,Channel_2,Channel_3,-0.09422219589563761,
+CF_1800.csv,data/raw/dataset_5/Bearing Dataset/CF_1800.csv,BRG_CF,1800rpm,Channel_1,Channel_2,0.11073323391551763,0.11073323391551763
+CF_1800.csv,data/raw/dataset_5/Bearing Dataset/CF_1800.csv,BRG_CF,1800rpm,Channel_1,Channel_3,-0.2631131090716405,
+CF_1800.csv,data/raw/dataset_5/Bearing Dataset/CF_1800.csv,BRG_CF,1800rpm,Channel_2,Channel_3,-0.11843108226085305,
+CF_200-2400-200.csv,data/raw/dataset_5/Bearing Dataset/CF_200-2400-200.csv,BRG_CF,200-2400-200,Channel_1,Channel_2,0.07362504221602291,0.07362504221602291
+CF_200-2400-200.csv,data/raw/dataset_5/Bearing Dataset/CF_200-2400-200.csv,BRG_CF,200-2400-200,Channel_1,Channel_3,-0.2767885673851081,
+CF_200-2400-200.csv,data/raw/dataset_5/Bearing Dataset/CF_200-2400-200.csv,BRG_CF,200-2400-200,Channel_2,Channel_3,-0.11578732210040772,
+CF_2400.csv,data/raw/dataset_5/Bearing Dataset/CF_2400.csv,BRG_CF,2400rpm,Channel_1,Channel_2,0.027526824816293993,0.027526824816293993
+CF_2400.csv,data/raw/dataset_5/Bearing Dataset/CF_2400.csv,BRG_CF,2400rpm,Channel_1,Channel_3,-0.25519143576264963,
+CF_2400.csv,data/raw/dataset_5/Bearing Dataset/CF_2400.csv,BRG_CF,2400rpm,Channel_2,Channel_3,-0.08585845568028357,
+IF+OF_1200.csv,data/raw/dataset_5/Bearing Dataset/IF+OF_1200.csv,BRG_IO,1200rpm,Channel_1,Channel_2,0.19910262576309062,0.19910262576309062
+IF+OF_1200.csv,data/raw/dataset_5/Bearing Dataset/IF+OF_1200.csv,BRG_IO,1200rpm,Channel_1,Channel_3,-0.050816737256693764,
+IF+OF_1200.csv,data/raw/dataset_5/Bearing Dataset/IF+OF_1200.csv,BRG_IO,1200rpm,Channel_2,Channel_3,0.03788517053758368,
+IF+OF_1800.csv,data/raw/dataset_5/Bearing Dataset/IF+OF_1800.csv,BRG_IO,1800rpm,Channel_1,Channel_2,0.2518958853008463,0.2518958853008463
+IF+OF_1800.csv,data/raw/dataset_5/Bearing Dataset/IF+OF_1800.csv,BRG_IO,1800rpm,Channel_1,Channel_3,-0.09948916401418739,
+IF+OF_1800.csv,data/raw/dataset_5/Bearing Dataset/IF+OF_1800.csv,BRG_IO,1800rpm,Channel_2,Channel_3,-0.05253816140373385,
+IF+OF_200-2400-200.csv,data/raw/dataset_5/Bearing Dataset/IF+OF_200-2400-200.csv,BRG_IO,200-2400-200,Channel_1,Channel_2,0.1521837010180565,0.1521837010180565
+IF+OF_200-2400-200.csv,data/raw/dataset_5/Bearing Dataset/IF+OF_200-2400-200.csv,BRG_IO,200-2400-200,Channel_1,Channel_3,-0.0831965121807257,
+IF+OF_200-2400-200.csv,data/raw/dataset_5/Bearing Dataset/IF+OF_200-2400-200.csv,BRG_IO,200-2400-200,Channel_2,Channel_3,-0.034587486642345955,
+IF+OF_2400.csv,data/raw/dataset_5/Bearing Dataset/IF+OF_2400.csv,BRG_IO,2400rpm,Channel_1,Channel_2,0.08017301921743956,0.08017301921743956
+IF+OF_2400.csv,data/raw/dataset_5/Bearing Dataset/IF+OF_2400.csv,BRG_IO,2400rpm,Channel_1,Channel_3,-0.07569502223862194,
+IF+OF_2400.csv,data/raw/dataset_5/Bearing Dataset/IF+OF_2400.csv,BRG_IO,2400rpm,Channel_2,Channel_3,-0.03590868993412988,
+IF_1200.csv,data/raw/dataset_5/Bearing Dataset/IF_1200.csv,BRG_IR,1200rpm,Channel_1,Channel_2,0.2550379537842215,0.2550379537842215
+IF_1200.csv,data/raw/dataset_5/Bearing Dataset/IF_1200.csv,BRG_IR,1200rpm,Channel_1,Channel_3,-0.1746197061127575,
+IF_1200.csv,data/raw/dataset_5/Bearing Dataset/IF_1200.csv,BRG_IR,1200rpm,Channel_2,Channel_3,-0.07847537423094791,
+IF_1800.csv,data/raw/dataset_5/Bearing Dataset/IF_1800.csv,BRG_IR,1800rpm,Channel_1,Channel_2,-0.06456572188527371,-0.06456572188527371
+IF_1800.csv,data/raw/dataset_5/Bearing Dataset/IF_1800.csv,BRG_IR,1800rpm,Channel_1,Channel_3,0.05906772218342866,
+IF_1800.csv,data/raw/dataset_5/Bearing Dataset/IF_1800.csv,BRG_IR,1800rpm,Channel_2,Channel_3,0.04990165201385496,
+IF_200-2400-200.csv,data/raw/dataset_5/Bearing Dataset/IF_200-2400-200.csv,BRG_IR,200-2400-200,Channel_1,Channel_2,-0.10228973431124193,-0.10228973431124193
+IF_200-2400-200.csv,data/raw/dataset_5/Bearing Dataset/IF_200-2400-200.csv,BRG_IR,200-2400-200,Channel_1,Channel_3,0.0017480987752443767,
+IF_200-2400-200.csv,data/raw/dataset_5/Bearing Dataset/IF_200-2400-200.csv,BRG_IR,200-2400-200,Channel_2,Channel_3,0.08486486866896868,
+IF_2400.csv,data/raw/dataset_5/Bearing Dataset/IF_2400.csv,BRG_IR,2400rpm,Channel_1,Channel_2,-0.15337184865737602,-0.15337184865737602
+IF_2400.csv,data/raw/dataset_5/Bearing Dataset/IF_2400.csv,BRG_IR,2400rpm,Channel_1,Channel_3,-0.0609974318997328,
+IF_2400.csv,data/raw/dataset_5/Bearing Dataset/IF_2400.csv,BRG_IR,2400rpm,Channel_2,Channel_3,0.18115223099131772,
+OF_1200.csv,data/raw/dataset_5/Bearing Dataset/OF_1200.csv,BRG_OR,1200rpm,Channel_1,Channel_2,0.2501148923028529,0.2501148923028529
+OF_1200.csv,data/raw/dataset_5/Bearing Dataset/OF_1200.csv,BRG_OR,1200rpm,Channel_1,Channel_3,-0.027435617884334133,
+OF_1200.csv,data/raw/dataset_5/Bearing Dataset/OF_1200.csv,BRG_OR,1200rpm,Channel_2,Channel_3,0.06788851318015847,
+OF_1800.csv,data/raw/dataset_5/Bearing Dataset/OF_1800.csv,BRG_OR,1800rpm,Channel_1,Channel_2,0.18152929509474247,0.18152929509474247
+OF_1800.csv,data/raw/dataset_5/Bearing Dataset/OF_1800.csv,BRG_OR,1800rpm,Channel_1,Channel_3,-0.0718727444943307,
+OF_1800.csv,data/raw/dataset_5/Bearing Dataset/OF_1800.csv,BRG_OR,1800rpm,Channel_2,Channel_3,0.07005558213685192,
+OF_200-2400-200.csv,data/raw/dataset_5/Bearing Dataset/OF_200-2400-200.csv,BRG_OR,200-2400-200,Channel_1,Channel_2,0.10633107897353214,0.10633107897353214
+OF_200-2400-200.csv,data/raw/dataset_5/Bearing Dataset/OF_200-2400-200.csv,BRG_OR,200-2400-200,Channel_1,Channel_3,-0.056152598988443284,
+OF_200-2400-200.csv,data/raw/dataset_5/Bearing Dataset/OF_200-2400-200.csv,BRG_OR,200-2400-200,Channel_2,Channel_3,0.07371860925900098,
+OF_2400.csv,data/raw/dataset_5/Bearing Dataset/OF_2400.csv,BRG_OR,2400rpm,Channel_1,Channel_2,0.025034480763026376,0.025034480763026376
+OF_2400.csv,data/raw/dataset_5/Bearing Dataset/OF_2400.csv,BRG_OR,2400rpm,Channel_1,Channel_3,-0.0819072171189298,
+OF_2400.csv,data/raw/dataset_5/Bearing Dataset/OF_2400.csv,BRG_OR,2400rpm,Channel_2,Channel_3,0.09919039834229387,
+gear tooth break_1200.csv,data/raw/dataset_5/Parallel Gearbox Dataset/gear tooth break_1200.csv,GBX_BT,1200rpm,Channel_1,Channel_2,0.10317143196250693,0.10317143196250693
+gear tooth break_1200.csv,data/raw/dataset_5/Parallel Gearbox Dataset/gear tooth break_1200.csv,GBX_BT,1200rpm,Channel_1,Channel_3,-0.14854698889396645,
+gear tooth break_1200.csv,data/raw/dataset_5/Parallel Gearbox Dataset/gear tooth break_1200.csv,GBX_BT,1200rpm,Channel_2,Channel_3,-0.05069458934665456,
+gear tooth break_1800.csv,data/raw/dataset_5/Parallel Gearbox Dataset/gear tooth break_1800.csv,GBX_BT,1800rpm,Channel_1,Channel_2,0.06369327403467505,0.06369327403467505
+gear tooth break_1800.csv,data/raw/dataset_5/Parallel Gearbox Dataset/gear tooth break_1800.csv,GBX_BT,1800rpm,Channel_1,Channel_3,-0.01071980006594294,
+gear tooth break_1800.csv,data/raw/dataset_5/Parallel Gearbox Dataset/gear tooth break_1800.csv,GBX_BT,1800rpm,Channel_2,Channel_3,-0.08533236310059554,
+gear tooth break_200-2400-200.csv,data/raw/dataset_5/Parallel Gearbox Dataset/gear tooth break_200-2400-200.csv,GBX_BT,200-2400-200,Channel_1,Channel_2,0.04869627869013409,0.04869627869013409
+gear tooth break_200-2400-200.csv,data/raw/dataset_5/Parallel Gearbox Dataset/gear tooth break_200-2400-200.csv,GBX_BT,200-2400-200,Channel_1,Channel_3,-0.13053793411892764,
+gear tooth break_200-2400-200.csv,data/raw/dataset_5/Parallel Gearbox Dataset/gear tooth break_200-2400-200.csv,GBX_BT,200-2400-200,Channel_2,Channel_3,-0.10302176496475682,
+gear tooth break_2400.csv,data/raw/dataset_5/Parallel Gearbox Dataset/gear tooth break_2400.csv,GBX_BT,2400rpm,Channel_1,Channel_2,0.05260567148586416,0.05260567148586416
+gear tooth break_2400.csv,data/raw/dataset_5/Parallel Gearbox Dataset/gear tooth break_2400.csv,GBX_BT,2400rpm,Channel_1,Channel_3,-0.12051372718168685,
+gear tooth break_2400.csv,data/raw/dataset_5/Parallel Gearbox Dataset/gear tooth break_2400.csv,GBX_BT,2400rpm,Channel_2,Channel_3,-0.11740489480112054,
+eccentric gear_1200.csv,data/raw/dataset_5/Parallel Gearbox Dataset/eccentric gear_1200.csv,GBX_EG,1200rpm,Channel_1,Channel_2,0.08636612154742189,0.08636612154742189
+eccentric gear_1200.csv,data/raw/dataset_5/Parallel Gearbox Dataset/eccentric gear_1200.csv,GBX_EG,1200rpm,Channel_1,Channel_3,-0.0001936820158651034,
+eccentric gear_1200.csv,data/raw/dataset_5/Parallel Gearbox Dataset/eccentric gear_1200.csv,GBX_EG,1200rpm,Channel_2,Channel_3,0.07158152642539935,
+eccentric gear_1800.csv,data/raw/dataset_5/Parallel Gearbox Dataset/eccentric gear_1800.csv,GBX_EG,1800rpm,Channel_1,Channel_2,0.1399991986597203,0.1399991986597203
+eccentric gear_1800.csv,data/raw/dataset_5/Parallel Gearbox Dataset/eccentric gear_1800.csv,GBX_EG,1800rpm,Channel_1,Channel_3,0.02309686900734094,
+eccentric gear_1800.csv,data/raw/dataset_5/Parallel Gearbox Dataset/eccentric gear_1800.csv,GBX_EG,1800rpm,Channel_2,Channel_3,0.07471412619556489,
+eccentric gear_200-2400-200.csv,data/raw/dataset_5/Parallel Gearbox Dataset/eccentric gear_200-2400-200.csv,GBX_EG,200-2400-200,Channel_1,Channel_2,0.07905579692118052,0.07905579692118052
+eccentric gear_200-2400-200.csv,data/raw/dataset_5/Parallel Gearbox Dataset/eccentric gear_200-2400-200.csv,GBX_EG,200-2400-200,Channel_1,Channel_3,-0.043504464661181824,
+eccentric gear_200-2400-200.csv,data/raw/dataset_5/Parallel Gearbox Dataset/eccentric gear_200-2400-200.csv,GBX_EG,200-2400-200,Channel_2,Channel_3,0.08271994698389114,
+eccentric gear_2400.csv,data/raw/dataset_5/Parallel Gearbox Dataset/eccentric gear_2400.csv,GBX_EG,2400rpm,Channel_1,Channel_2,0.06949938294692012,0.06949938294692012
+eccentric gear_2400.csv,data/raw/dataset_5/Parallel Gearbox Dataset/eccentric gear_2400.csv,GBX_EG,2400rpm,Channel_1,Channel_3,-0.043820930415539965,
+eccentric gear_2400.csv,data/raw/dataset_5/Parallel Gearbox Dataset/eccentric gear_2400.csv,GBX_EG,2400rpm,Channel_2,Channel_3,0.0888615296868011,
+gear surface wear_1200.csv,data/raw/dataset_5/Parallel Gearbox Dataset/gear surface wear_1200.csv,GBX_WR,1200rpm,Channel_1,Channel_2,0.034653792449462956,0.034653792449462956
+gear surface wear_1200.csv,data/raw/dataset_5/Parallel Gearbox Dataset/gear surface wear_1200.csv,GBX_WR,1200rpm,Channel_1,Channel_3,-0.1667574483820493,
+gear surface wear_1200.csv,data/raw/dataset_5/Parallel Gearbox Dataset/gear surface wear_1200.csv,GBX_WR,1200rpm,Channel_2,Channel_3,0.09425154234419127,
+gear surface wear_1800.csv,data/raw/dataset_5/Parallel Gearbox Dataset/gear surface wear_1800.csv,GBX_WR,1800rpm,Channel_1,Channel_2,0.026128066295781047,0.026128066295781047
+gear surface wear_1800.csv,data/raw/dataset_5/Parallel Gearbox Dataset/gear surface wear_1800.csv,GBX_WR,1800rpm,Channel_1,Channel_3,0.0104039158429363,
+gear surface wear_1800.csv,data/raw/dataset_5/Parallel Gearbox Dataset/gear surface wear_1800.csv,GBX_WR,1800rpm,Channel_2,Channel_3,0.013892809371978494,
+gear surface wear_200-2400-200.csv,data/raw/dataset_5/Parallel Gearbox Dataset/gear surface wear_200-2400-200.csv,GBX_WR,200-2400-200,Channel_1,Channel_2,0.00789741922063549,0.00789741922063549
+gear surface wear_200-2400-200.csv,data/raw/dataset_5/Parallel Gearbox Dataset/gear surface wear_200-2400-200.csv,GBX_WR,200-2400-200,Channel_1,Channel_3,-0.07538552469389699,
+gear surface wear_200-2400-200.csv,data/raw/dataset_5/Parallel Gearbox Dataset/gear surface wear_200-2400-200.csv,GBX_WR,200-2400-200,Channel_2,Channel_3,-0.04772871151001084,
+gear surface wear_2400.csv,data/raw/dataset_5/Parallel Gearbox Dataset/gear surface wear_2400.csv,GBX_WR,2400rpm,Channel_1,Channel_2,0.035646362101204164,0.035646362101204164
+gear surface wear_2400.csv,data/raw/dataset_5/Parallel Gearbox Dataset/gear surface wear_2400.csv,GBX_WR,2400rpm,Channel_1,Channel_3,-0.10721100371553831,
+gear surface wear_2400.csv,data/raw/dataset_5/Parallel Gearbox Dataset/gear surface wear_2400.csv,GBX_WR,2400rpm,Channel_2,Channel_3,-0.07308299248330859,
+IF+gear tooth break_1200.csv,data/raw/dataset_5/Mixed Fault Dataset/IF+gear tooth break_1200.csv,MIX_IB,1200rpm,Channel_1,Channel_2,0.07479804744805488,0.07479804744805488
+IF+gear tooth break_1200.csv,data/raw/dataset_5/Mixed Fault Dataset/IF+gear tooth break_1200.csv,MIX_IB,1200rpm,Channel_1,Channel_3,0.08598735439311099,
+IF+gear tooth break_1200.csv,data/raw/dataset_5/Mixed Fault Dataset/IF+gear tooth break_1200.csv,MIX_IB,1200rpm,Channel_2,Channel_3,0.1971165164063313,
+IF+gear tooth break_1800.csv,data/raw/dataset_5/Mixed Fault Dataset/IF+gear tooth break_1800.csv,MIX_IB,1800rpm,Channel_1,Channel_2,-0.009472617607238033,-0.009472617607238033
+IF+gear tooth break_1800.csv,data/raw/dataset_5/Mixed Fault Dataset/IF+gear tooth break_1800.csv,MIX_IB,1800rpm,Channel_1,Channel_3,-0.012288799814980489,
+IF+gear tooth break_1800.csv,data/raw/dataset_5/Mixed Fault Dataset/IF+gear tooth break_1800.csv,MIX_IB,1800rpm,Channel_2,Channel_3,-0.04318418589430181,
+IF+gear tooth break_200-2400-200.csv,data/raw/dataset_5/Mixed Fault Dataset/IF+gear tooth break_200-2400-200.csv,MIX_IB,200-2400-200,Channel_1,Channel_2,-0.04871806698427124,-0.04871806698427124
+IF+gear tooth break_200-2400-200.csv,data/raw/dataset_5/Mixed Fault Dataset/IF+gear tooth break_200-2400-200.csv,MIX_IB,200-2400-200,Channel_1,Channel_3,0.007748808824989456,
+IF+gear tooth break_200-2400-200.csv,data/raw/dataset_5/Mixed Fault Dataset/IF+gear tooth break_200-2400-200.csv,MIX_IB,200-2400-200,Channel_2,Channel_3,-0.030224747068197336,
+IF+gear tooth break_2400.csv,data/raw/dataset_5/Mixed Fault Dataset/IF+gear tooth break_2400.csv,MIX_IB,2400rpm,Channel_1,Channel_2,-0.06615506450339335,-0.06615506450339335
+IF+gear tooth break_2400.csv,data/raw/dataset_5/Mixed Fault Dataset/IF+gear tooth break_2400.csv,MIX_IB,2400rpm,Channel_1,Channel_3,-0.028547464785501193,
+IF+gear tooth break_2400.csv,data/raw/dataset_5/Mixed Fault Dataset/IF+gear tooth break_2400.csv,MIX_IB,2400rpm,Channel_2,Channel_3,-0.05666790713616105,
+IF+eccentric gear_1200.csv,data/raw/dataset_5/Mixed Fault Dataset/IF+eccentric gear_1200.csv,MIX_II,1200rpm,Channel_1,Channel_2,-0.05640994872120703,-0.05640994872120703
+IF+eccentric gear_1200.csv,data/raw/dataset_5/Mixed Fault Dataset/IF+eccentric gear_1200.csv,MIX_II,1200rpm,Channel_1,Channel_3,-0.05208995984158924,
+IF+eccentric gear_1200.csv,data/raw/dataset_5/Mixed Fault Dataset/IF+eccentric gear_1200.csv,MIX_II,1200rpm,Channel_2,Channel_3,0.01250910423633099,
+IF+eccentric gear_1800.csv,data/raw/dataset_5/Mixed Fault Dataset/IF+eccentric gear_1800.csv,MIX_II,1800rpm,Channel_1,Channel_2,-0.04880887178218122,-0.04880887178218122
+IF+eccentric gear_1800.csv,data/raw/dataset_5/Mixed Fault Dataset/IF+eccentric gear_1800.csv,MIX_II,1800rpm,Channel_1,Channel_3,0.009213941760767393,
+IF+eccentric gear_1800.csv,data/raw/dataset_5/Mixed Fault Dataset/IF+eccentric gear_1800.csv,MIX_II,1800rpm,Channel_2,Channel_3,-0.0014676149013177447,
+IF+eccentric gear_200-2400-200.csv,data/raw/dataset_5/Mixed Fault Dataset/IF+eccentric gear_200-2400-200.csv,MIX_II,200-2400-200,Channel_1,Channel_2,-0.07221834269900414,-0.07221834269900414
+IF+eccentric gear_200-2400-200.csv,data/raw/dataset_5/Mixed Fault Dataset/IF+eccentric gear_200-2400-200.csv,MIX_II,200-2400-200,Channel_1,Channel_3,-0.016123351933477865,
+IF+eccentric gear_200-2400-200.csv,data/raw/dataset_5/Mixed Fault Dataset/IF+eccentric gear_200-2400-200.csv,MIX_II,200-2400-200,Channel_2,Channel_3,0.009507054378948764,
+IF+eccentric gear_2400.csv,data/raw/dataset_5/Mixed Fault Dataset/IF+eccentric gear_2400.csv,MIX_II,2400rpm,Channel_1,Channel_2,-0.09898828966062061,-0.09898828966062061
+IF+eccentric gear_2400.csv,data/raw/dataset_5/Mixed Fault Dataset/IF+eccentric gear_2400.csv,MIX_II,2400rpm,Channel_1,Channel_3,-0.12935769211603945,
+IF+eccentric gear_2400.csv,data/raw/dataset_5/Mixed Fault Dataset/IF+eccentric gear_2400.csv,MIX_II,2400rpm,Channel_2,Channel_3,-0.0043960804840531545,
+IF+gear surface wear_1200.csv,data/raw/dataset_5/Mixed Fault Dataset/IF+gear surface wear_1200.csv,MIX_IS,1200rpm,Channel_1,Channel_2,0.053738203728814986,0.053738203728814986
+IF+gear surface wear_1200.csv,data/raw/dataset_5/Mixed Fault Dataset/IF+gear surface wear_1200.csv,MIX_IS,1200rpm,Channel_1,Channel_3,-0.004624904140444438,
+IF+gear surface wear_1200.csv,data/raw/dataset_5/Mixed Fault Dataset/IF+gear surface wear_1200.csv,MIX_IS,1200rpm,Channel_2,Channel_3,-0.10586186289813361,
+IF+gear surface wear_1800.csv,data/raw/dataset_5/Mixed Fault Dataset/IF+gear surface wear_1800.csv,MIX_IS,1800rpm,Channel_1,Channel_2,0.04582440790093573,0.04582440790093573
+IF+gear surface wear_1800.csv,data/raw/dataset_5/Mixed Fault Dataset/IF+gear surface wear_1800.csv,MIX_IS,1800rpm,Channel_1,Channel_3,-0.06357673659756906,
+IF+gear surface wear_1800.csv,data/raw/dataset_5/Mixed Fault Dataset/IF+gear surface wear_1800.csv,MIX_IS,1800rpm,Channel_2,Channel_3,-0.11438297709253849,
+IF+gear surface wear_200-2400-200.csv,data/raw/dataset_5/Mixed Fault Dataset/IF+gear surface wear_200-2400-200.csv,MIX_IS,200-2400-200,Channel_1,Channel_2,0.02505557960748002,0.02505557960748002
+IF+gear surface wear_200-2400-200.csv,data/raw/dataset_5/Mixed Fault Dataset/IF+gear surface wear_200-2400-200.csv,MIX_IS,200-2400-200,Channel_1,Channel_3,-0.06903977951519463,
+IF+gear surface wear_200-2400-200.csv,data/raw/dataset_5/Mixed Fault Dataset/IF+gear surface wear_200-2400-200.csv,MIX_IS,200-2400-200,Channel_2,Channel_3,-0.056745526590527624,
+IF+gear surface wear_2400.csv,data/raw/dataset_5/Mixed Fault Dataset/IF+gear surface wear_2400.csv,MIX_IS,2400rpm,Channel_1,Channel_2,-0.03397342587804516,-0.03397342587804516
+IF+gear surface wear_2400.csv,data/raw/dataset_5/Mixed Fault Dataset/IF+gear surface wear_2400.csv,MIX_IS,2400rpm,Channel_1,Channel_3,-0.17633953467761948,
+IF+gear surface wear_2400.csv,data/raw/dataset_5/Mixed Fault Dataset/IF+gear surface wear_2400.csv,MIX_IS,2400rpm,Channel_2,Channel_3,-0.10582050437898313,
+OF+gear tooth break_1200.csv,data/raw/dataset_5/Mixed Fault Dataset/OF+gear tooth break_1200.csv,MIX_OB,1200rpm,Channel_1,Channel_2,0.126677819307537,0.126677819307537
+OF+gear tooth break_1200.csv,data/raw/dataset_5/Mixed Fault Dataset/OF+gear tooth break_1200.csv,MIX_OB,1200rpm,Channel_1,Channel_3,0.11578948824888458,
+OF+gear tooth break_1200.csv,data/raw/dataset_5/Mixed Fault Dataset/OF+gear tooth break_1200.csv,MIX_OB,1200rpm,Channel_2,Channel_3,0.05991318285625616,
+OF+gear tooth break_1800.csv,data/raw/dataset_5/Mixed Fault Dataset/OF+gear tooth break_1800.csv,MIX_OB,1800rpm,Channel_1,Channel_2,0.03781823620630652,0.03781823620630652
+OF+gear tooth break_1800.csv,data/raw/dataset_5/Mixed Fault Dataset/OF+gear tooth break_1800.csv,MIX_OB,1800rpm,Channel_1,Channel_3,0.07760579793425514,
+OF+gear tooth break_1800.csv,data/raw/dataset_5/Mixed Fault Dataset/OF+gear tooth break_1800.csv,MIX_OB,1800rpm,Channel_2,Channel_3,0.007809919410308303,
+OF+gear tooth break_200-2400-200.csv,data/raw/dataset_5/Mixed Fault Dataset/OF+gear tooth break_200-2400-200.csv,MIX_OB,200-2400-200,Channel_1,Channel_2,-0.009990878241552094,-0.009990878241552094
+OF+gear tooth break_200-2400-200.csv,data/raw/dataset_5/Mixed Fault Dataset/OF+gear tooth break_200-2400-200.csv,MIX_OB,200-2400-200,Channel_1,Channel_3,0.06321947121952047,
+OF+gear tooth break_200-2400-200.csv,data/raw/dataset_5/Mixed Fault Dataset/OF+gear tooth break_200-2400-200.csv,MIX_OB,200-2400-200,Channel_2,Channel_3,-0.012891765810155916,
+OF+gear tooth break_2400.csv,data/raw/dataset_5/Mixed Fault Dataset/OF+gear tooth break_2400.csv,MIX_OB,2400rpm,Channel_1,Channel_2,-0.08991736598834708,-0.08991736598834708
+OF+gear tooth break_2400.csv,data/raw/dataset_5/Mixed Fault Dataset/OF+gear tooth break_2400.csv,MIX_OB,2400rpm,Channel_1,Channel_3,-0.03036551906359916,
+OF+gear tooth break_2400.csv,data/raw/dataset_5/Mixed Fault Dataset/OF+gear tooth break_2400.csv,MIX_OB,2400rpm,Channel_2,Channel_3,-0.06132692096412588,
+OF+eccentric gear_1200.csv,data/raw/dataset_5/Mixed Fault Dataset/OF+eccentric gear_1200.csv,MIX_OI,1200rpm,Channel_1,Channel_2,0.09551214801456324,0.09551214801456324
+OF+eccentric gear_1200.csv,data/raw/dataset_5/Mixed Fault Dataset/OF+eccentric gear_1200.csv,MIX_OI,1200rpm,Channel_1,Channel_3,0.12816192687961256,
+OF+eccentric gear_1200.csv,data/raw/dataset_5/Mixed Fault Dataset/OF+eccentric gear_1200.csv,MIX_OI,1200rpm,Channel_2,Channel_3,0.09361638628829615,
+OF+eccentric gear_1800.csv,data/raw/dataset_5/Mixed Fault Dataset/OF+eccentric gear_1800.csv,MIX_OI,1800rpm,Channel_1,Channel_2,0.004680932669272993,0.004680932669272993
+OF+eccentric gear_1800.csv,data/raw/dataset_5/Mixed Fault Dataset/OF+eccentric gear_1800.csv,MIX_OI,1800rpm,Channel_1,Channel_3,0.12301522281009125,
+OF+eccentric gear_1800.csv,data/raw/dataset_5/Mixed Fault Dataset/OF+eccentric gear_1800.csv,MIX_OI,1800rpm,Channel_2,Channel_3,0.06255440781868414,
+OF+eccentric gear_200-2400-200.csv,data/raw/dataset_5/Mixed Fault Dataset/OF+eccentric gear_200-2400-200.csv,MIX_OI,200-2400-200,Channel_1,Channel_2,-0.016818077037590678,-0.016818077037590678
+OF+eccentric gear_200-2400-200.csv,data/raw/dataset_5/Mixed Fault Dataset/OF+eccentric gear_200-2400-200.csv,MIX_OI,200-2400-200,Channel_1,Channel_3,0.04831423916306851,
+OF+eccentric gear_200-2400-200.csv,data/raw/dataset_5/Mixed Fault Dataset/OF+eccentric gear_200-2400-200.csv,MIX_OI,200-2400-200,Channel_2,Channel_3,0.039466890159666534,
+OF+eccentric gear_2400.csv,data/raw/dataset_5/Mixed Fault Dataset/OF+eccentric gear_2400.csv,MIX_OI,2400rpm,Channel_1,Channel_2,-0.0894440370278281,-0.0894440370278281
+OF+eccentric gear_2400.csv,data/raw/dataset_5/Mixed Fault Dataset/OF+eccentric gear_2400.csv,MIX_OI,2400rpm,Channel_1,Channel_3,-0.1180702152904867,
+OF+eccentric gear_2400.csv,data/raw/dataset_5/Mixed Fault Dataset/OF+eccentric gear_2400.csv,MIX_OI,2400rpm,Channel_2,Channel_3,-0.016052291788564887,
+OF+gear surface wear_1200.csv,data/raw/dataset_5/Mixed Fault Dataset/OF+gear surface wear_1200.csv,MIX_OS,1200rpm,Channel_1,Channel_2,0.11954617612319196,0.11954617612319196
+OF+gear surface wear_1200.csv,data/raw/dataset_5/Mixed Fault Dataset/OF+gear surface wear_1200.csv,MIX_OS,1200rpm,Channel_1,Channel_3,0.06060009151778632,
+OF+gear surface wear_1200.csv,data/raw/dataset_5/Mixed Fault Dataset/OF+gear surface wear_1200.csv,MIX_OS,1200rpm,Channel_2,Channel_3,-0.07609268678862106,
+OF+gear surface wear_1800.csv,data/raw/dataset_5/Mixed Fault Dataset/OF+gear surface wear_1800.csv,MIX_OS,1800rpm,Channel_1,Channel_2,0.14149302059859434,0.14149302059859434
+OF+gear surface wear_1800.csv,data/raw/dataset_5/Mixed Fault Dataset/OF+gear surface wear_1800.csv,MIX_OS,1800rpm,Channel_1,Channel_3,0.08683039251430395,
+OF+gear surface wear_1800.csv,data/raw/dataset_5/Mixed Fault Dataset/OF+gear surface wear_1800.csv,MIX_OS,1800rpm,Channel_2,Channel_3,-0.053902617928050754,
+OF+gear surface wear_200-2400-200.csv,data/raw/dataset_5/Mixed Fault Dataset/OF+gear surface wear_200-2400-200.csv,MIX_OS,200-2400-200,Channel_1,Channel_2,0.14635803697842711,0.14635803697842711
+OF+gear surface wear_200-2400-200.csv,data/raw/dataset_5/Mixed Fault Dataset/OF+gear surface wear_200-2400-200.csv,MIX_OS,200-2400-200,Channel_1,Channel_3,-0.010621546715880115,
+OF+gear surface wear_200-2400-200.csv,data/raw/dataset_5/Mixed Fault Dataset/OF+gear surface wear_200-2400-200.csv,MIX_OS,200-2400-200,Channel_2,Channel_3,0.009072363232997616,
+OF+gear surface wear_2400.csv,data/raw/dataset_5/Mixed Fault Dataset/OF+gear surface wear_2400.csv,MIX_OS,2400rpm,Channel_1,Channel_2,0.0797201516903711,0.0797201516903711
+OF+gear surface wear_2400.csv,data/raw/dataset_5/Mixed Fault Dataset/OF+gear surface wear_2400.csv,MIX_OS,2400rpm,Channel_1,Channel_3,-0.14032536910708757,
+OF+gear surface wear_2400.csv,data/raw/dataset_5/Mixed Fault Dataset/OF+gear surface wear_2400.csv,MIX_OS,2400rpm,Channel_2,Channel_3,-0.04555027999945884,
+Normal_1200.csv,data/raw/dataset_5/Bearing Dataset/Normal_1200.csv,NOR,1200rpm,Channel_1,Channel_2,-0.0049229023552849775,-0.0049229023552849775
+Normal_1200.csv,data/raw/dataset_5/Bearing Dataset/Normal_1200.csv,NOR,1200rpm,Channel_1,Channel_3,-0.040186957976609164,
+Normal_1200.csv,data/raw/dataset_5/Bearing Dataset/Normal_1200.csv,NOR,1200rpm,Channel_2,Channel_3,-0.2939071803392712,
+normal_1200.csv,data/raw/dataset_5/Parallel Gearbox Dataset/normal_1200.csv,NOR,1200rpm,Channel_1,Channel_2,-0.062013377947951,-0.062013377947951
+normal_1200.csv,data/raw/dataset_5/Parallel Gearbox Dataset/normal_1200.csv,NOR,1200rpm,Channel_1,Channel_3,-0.07435908994548478,
+normal_1200.csv,data/raw/dataset_5/Parallel Gearbox Dataset/normal_1200.csv,NOR,1200rpm,Channel_2,Channel_3,0.06348648763438501,
+Normal_1800.csv,data/raw/dataset_5/Bearing Dataset/Normal_1800.csv,NOR,1800rpm,Channel_1,Channel_2,-0.015485202419818668,-0.015485202419818668
+Normal_1800.csv,data/raw/dataset_5/Bearing Dataset/Normal_1800.csv,NOR,1800rpm,Channel_1,Channel_3,-0.13701723863771892,
+Normal_1800.csv,data/raw/dataset_5/Bearing Dataset/Normal_1800.csv,NOR,1800rpm,Channel_2,Channel_3,-0.03210520494595743,
+normal_1800.csv,data/raw/dataset_5/Parallel Gearbox Dataset/normal_1800.csv,NOR,1800rpm,Channel_1,Channel_2,0.014751957033387442,0.014751957033387442
+normal_1800.csv,data/raw/dataset_5/Parallel Gearbox Dataset/normal_1800.csv,NOR,1800rpm,Channel_1,Channel_3,-0.01774347224806478,
+normal_1800.csv,data/raw/dataset_5/Parallel Gearbox Dataset/normal_1800.csv,NOR,1800rpm,Channel_2,Channel_3,-0.14878379920165039,
+Normal_200-2400-200.csv,data/raw/dataset_5/Bearing Dataset/Normal_200-2400-200.csv,NOR,200-2400-200,Channel_1,Channel_2,-0.021921361290896755,-0.021921361290896755
+Normal_200-2400-200.csv,data/raw/dataset_5/Bearing Dataset/Normal_200-2400-200.csv,NOR,200-2400-200,Channel_1,Channel_3,-0.053107163597630465,
+Normal_200-2400-200.csv,data/raw/dataset_5/Bearing Dataset/Normal_200-2400-200.csv,NOR,200-2400-200,Channel_2,Channel_3,-0.27998744281120586,
+normal_200-2400-200.csv,data/raw/dataset_5/Parallel Gearbox Dataset/normal_200-2400-200.csv,NOR,200-2400-200,Channel_1,Channel_2,0.029338300215331164,0.029338300215331164
+normal_200-2400-200.csv,data/raw/dataset_5/Parallel Gearbox Dataset/normal_200-2400-200.csv,NOR,200-2400-200,Channel_1,Channel_3,-0.0979137864620788,
+normal_200-2400-200.csv,data/raw/dataset_5/Parallel Gearbox Dataset/normal_200-2400-200.csv,NOR,200-2400-200,Channel_2,Channel_3,0.05391436971281937,
+Normal_2400.csv,data/raw/dataset_5/Bearing Dataset/Normal_2400.csv,NOR,2400rpm,Channel_1,Channel_2,0.022081722351602374,0.022081722351602374
+Normal_2400.csv,data/raw/dataset_5/Bearing Dataset/Normal_2400.csv,NOR,2400rpm,Channel_1,Channel_3,-0.09744472876144715,
+Normal_2400.csv,data/raw/dataset_5/Bearing Dataset/Normal_2400.csv,NOR,2400rpm,Channel_2,Channel_3,-0.04028790207641418,
+normal_2400.csv,data/raw/dataset_5/Parallel Gearbox Dataset/normal_2400.csv,NOR,2400rpm,Channel_1,Channel_2,0.046360466811855995,0.046360466811855995
+normal_2400.csv,data/raw/dataset_5/Parallel Gearbox Dataset/normal_2400.csv,NOR,2400rpm,Channel_1,Channel_3,-0.06275030689127822,
+normal_2400.csv,data/raw/dataset_5/Parallel Gearbox Dataset/normal_2400.csv,NOR,2400rpm,Channel_2,Channel_3,-0.1700273615191559,

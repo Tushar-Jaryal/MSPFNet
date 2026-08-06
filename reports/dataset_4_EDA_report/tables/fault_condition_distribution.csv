@@ -1,0 +1,9 @@
+fault,modespeed_load10Nm_1000rpm,modespeed_load10Nm_2000rpm,modespeed_load10Nm_3000rpm,modespeed_load20Nm_1000rpm,modespeed_load20Nm_2000rpm,modespeed_load20Nm_3000rpm,modetorque_load10Nm_1000rpm,modetorque_load10Nm_2000rpm,modetorque_load10Nm_3000rpm,modetorque_load20Nm_1000rpm,modetorque_load20Nm_2000rpm,modetorque_load20Nm_3000rpm
+GBX_BT,3,3,3,3,3,3,3,3,3,3,3,3
+GBX_CK,3,3,3,3,3,3,3,3,3,3,3,3
+GBX_MT,1,1,1,1,1,1,1,1,1,1,1,1
+GBX_PT,3,3,3,3,3,3,3,3,3,3,3,3
+GBX_WR,3,3,3,3,3,3,3,3,3,3,3,3
+MIX_TI,3,3,3,3,3,3,3,3,3,3,3,3
+MIX_TO,3,3,3,3,3,3,3,3,3,3,3,3
+NOR,1,1,1,1,1,1,1,1,1,1,1,1

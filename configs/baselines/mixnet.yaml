@@ -1,0 +1,9 @@
+model:
+  name: mixnet
+  width: 64
+  n_blocks: 4
+  dropout: 0.1
+  expansion: 4
+
+training:
+  batch_size: 512

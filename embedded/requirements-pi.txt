@@ -1,0 +1,10 @@
+# Install PyTorch separately for your platform (aarch64 on Pi 5):
+#   pip install torch --index-url https://download.pytorch.org/whl/cpu
+#
+# Then install the project and these extras:
+numpy
+pandas
+pyyaml
+scikit-learn
+thop
+psutil

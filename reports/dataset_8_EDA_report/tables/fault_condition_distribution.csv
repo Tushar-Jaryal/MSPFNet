@@ -1,0 +1,4 @@
+fault,L0_VS_0_40,L1_VS_0_40,L2_VS_0_40,L3_VS_0_40,L4_VS_0_40,spd20hz,spd25hz,spd30hz,spd35hz,spd40hz
+GBX_BT,1,1,1,1,1,5,5,5,5,5
+GBX_MT,1,1,1,1,1,5,5,5,5,5
+NOR,1,1,1,1,1,5,5,5,5,5

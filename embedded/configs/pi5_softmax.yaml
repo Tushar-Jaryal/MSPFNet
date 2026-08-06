@@ -1,0 +1,9 @@
+embedded:
+  device: cpu
+  batch_size: 1
+  latency_runs: 1000
+  benchmark_latency_runs: 100
+  latency_warmup: 50
+  torch_num_threads: 4
+  processed_dir: data/processed
+  results_dir: embedded/results

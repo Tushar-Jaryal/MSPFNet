@@ -1,0 +1,123 @@
+profile: adaptive_mspf_slim
+
+data:
+  mode: processed
+  dataset_ids: [1]
+  label_space: fine
+
+# Batch sizes tuned for 48 GB NVIDIA A6000 (CUDA + AMP). Reduce if OOM.
+training:
+  batch_size: 128
+  lr: 0.0005
+  weight_decay: 0.0005
+  scheduler: cosine_warmup
+  warmup_epochs: 2
+  min_lr_ratio: 0.05
+  label_smoothing: 0.05
+  grad_clip_norm: 1.0
+  accum_steps: 1
+  use_amp: true
+  selection_metric: val_macro_f1
+  class_weight_power: 0.5
+  max_class_weight: 5.0
+  augmentation:
+    enabled: true
+    noise_snr_db: [20, 10]
+    jitter_pct: 0.05
+    amplitude_scale: [0.9, 1.1]
+  experiment_tag: softmax
+
+model:
+  name: mspf_net
+  architecture: slim
+  stem_channels: 64
+  branch_channels: 128
+  feat_dim: 512
+  se_reduction: 16
+  cwt_num_bands: 3
+  cwt_kernel_size: 129
+  scalogram_freq_bins: 32
+  scalogram_time_bins: 64
+  use_se: true
+  use_early_channel_mixer: true
+  use_sensor_fusion_stem: true
+  sensor_fusion_mode: residual_attention
+  channel_pooling: attention
+  classifier_head: softmax
+  dropout: 0.3
+  use_nonstationary_path: true
+  nonstationary_hidden_size: 128
+  nonstationary_num_layers: 1
+  nonstationary_downsample_stride: 4
+  path_fusion_mode: gated_sum
+  min_periodic_gate: 0.25
+  max_periodic_gate: 0.9
+  rf_n_estimators: 300
+  rf_max_depth: null
+  rf_max_features: sqrt
+  rf_min_samples_split: 2
+  rf_n_jobs: -1
+
+dataset_overrides:
+  D1:
+    profile: tf_temporal
+    training:
+      batch_size: 256
+      accum_steps: 1
+      selection_metric: val_macro_f1
+    model:
+      dropout: 0.25
+      scalogram_time_bins: 32
+      min_periodic_gate: 0.45
+      max_periodic_gate: 0.92
+  D2:
+    profile: file_first_long
+    training:
+      batch_size: 32
+      accum_steps: 1
+      lr: 0.0004
+      selection_metric: val_file_macro_f1
+    model:
+      dropout: 0.35
+      scalogram_time_bins: 96
+      nonstationary_hidden_size: 192
+      nonstationary_num_layers: 2
+      min_periodic_gate: 0.2
+      max_periodic_gate: 0.75
+  D4:
+    profile: file_first_mid
+    training:
+      batch_size: 128
+      accum_steps: 1
+      lr: 0.0004
+      selection_metric: val_file_macro_f1
+    model:
+      dropout: 0.3
+      scalogram_time_bins: 64
+      nonstationary_hidden_size: 192
+      min_periodic_gate: 0.2
+      max_periodic_gate: 0.7
+  D5:
+    profile: file_first_short
+    training:
+      batch_size: 512
+      accum_steps: 1
+      lr: 0.00045
+      selection_metric: val_file_macro_f1
+    model:
+      dropout: 0.35
+      scalogram_time_bins: 32
+      nonstationary_hidden_size: 192
+      min_periodic_gate: 0.15
+      max_periodic_gate: 0.65
+  D8:
+    profile: tf_temporal_long
+    training:
+      batch_size: 32
+      accum_steps: 1
+      selection_metric: val_file_macro_f1
+    model:
+      dropout: 0.25
+      scalogram_time_bins: 96
+      min_periodic_gate: 0.45
+      max_periodic_gate: 0.92
