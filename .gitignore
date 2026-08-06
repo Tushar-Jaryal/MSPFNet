@@ -28,9 +28,6 @@ venv/
 # Thesis / notebooks scratch
 /thesis/
 .ipynb_checkpoints/
-THESIS_EVALUATION_PLAN.md
-THESIS_EVALUATION_PLAN_VISUAL.md
-CODEBASE_IMPLEMENTATION_PRESENTATION.md
 
 # Raw and generated data
 /data/raw/

@@ -23,21 +23,20 @@ MSPF-Net/
 ├── embedded/                # Raspberry Pi 5 export and benchmark tools
 ├── outputs/                 # Dataset metadata summaries
 ├── reports/                 # EDA report summaries and figures
-├── results_final/           # Curated, thesis-verified results (see below)
+├── results_final/           # Curated, thesis-verified results (not in git, see Data below)
 │   ├── checkpoints_and_results/  # Trained weights + full per-run JSON results
 │   ├── tables/               # Final thesis result tables (CSV)
-│   ├── figures/              # Final thesis figures (matches thesis/figures/ exactly)
+│   ├── figures/              # Final thesis figures used in the written thesis
 │   ├── embedded_bundles/     # Raspberry Pi 5 deployment bundles
 │   └── thesis/               # Thesis PDF this folder was verified against
 ├── scripts/                 # Reproduction entry points
 ├── src/mspf_net/            # Package source code
-├── thesis/                  # LaTeX source, figures, and defense materials
 ├── environment.yml          # Conda environment
 └── pyproject.toml           # Editable package metadata
 ```
 
 `results_final/` is the single canonical results folder, curated and verified cell-by-cell against
-`thesis/TusharJaryal_FullThesis_12072026.pdf`. Rerunning the pipeline steps below writes fresh output
+`results_final/thesis/TusharJaryal_FullThesis_12072026.pdf`. Rerunning the pipeline steps below writes fresh output
 to `results/` (the default `results_dir` in `configs/config.yaml`), which is a separate, uncurated
 location — promote anything you want kept into `results_final/` manually.
 
@@ -51,7 +50,7 @@ what the thesis actually reports:
 |---|---|---|
 | Table 4.1 / 4.2 (main benchmark) | MSPF-Net | `softmax` |
 | Table 4.1 / 4.2 (main benchmark) | 11 baselines | `recommended_fine` |
-| Ablation table | MSPF-Net (8 rows) | `softmax`, `no_period`, `no_multiscale`, `no_spectral`, `no_local_residual`, `no_se`, `equal_period_weighting`, `mean_channel_pooling` |
+| Ablation table | MSPF-Net (7 rows) | `softmax`, `no_periodic_path`, `no_nonstationary_path`, `equal_path_fusion`, `simple_channel_mixer`, `no_se`, `mean_channel_pooling` |
 | Robustness table | all 12 models | same tag as above, `robustness.file_level.macro_f1` field inside the JSON |
 | Appendix param/latency table | all 12 models | `embedded/results/tables/pi5_*` (Pi5 measurements) |
 
@@ -59,9 +58,10 @@ what the thesis actually reports:
 (`test.file_level.macro_f1`, `test.macro_f1`, `robustness.file_level.macro_f1`) and checked
 cell-by-cell against the thesis PDF.
 
-Known loose end: `thesis/chapter3.tex:396` claims D4 channel 1's median dominant period is 381.6 ms,
-but that value could only be found as a per-file **max**, not a median, in the timeseries analysis
-tables. Worth re-checking against the original analysis script before the next revision.
+Known loose end (in the external thesis LaTeX source, which is not included in this repo):
+chapter 3 claims D4 channel 1's median dominant period is 381.6 ms, but that value could only be
+found as a per-file **max**, not a median, in the timeseries analysis tables. Worth re-checking
+against the original analysis script before the next revision.
 
 ## Setup
 
@@ -82,11 +82,16 @@ pip install -e .
 
 ## Data
 
-The dataset files are available from Google Drive:
+Raw datasets and the curated final results are too large for git and are hosted on Google Drive instead:
 
-[MSPF-Net data folder](https://drive.google.com/drive/folders/1QaCOWctCfAHH4ixc7Dq2EWfnnWCmI_Xo?usp=sharing)
+[MSPF-Net Drive folder](https://drive.google.com/drive/folders/1QaCOWctCfAHH4ixc7Dq2EWfnnWCmI_Xo?usp=drive_link)
 
-Download the data and place the raw datasets under:
+| File | Contents | Extract to |
+|---|---|---|
+| `Raw_Data+Metadata.zip` | Raw vibration recordings for D1, D2, D4, D5, D8 plus dataset metadata | `data/raw/` |
+| `results_final.zip` | Curated, thesis-verified results: trained checkpoints, per-run JSON results, final tables/figures, embedded bundles | `results_final/` |
+
+After extracting `Raw_Data+Metadata.zip`, the raw datasets should sit under:
 
 ```text
 data/raw/dataset_1/
@@ -96,7 +101,13 @@ data/raw/dataset_5/
 data/raw/dataset_8/
 ```
 
-The repository includes lightweight metadata, catalogs, and the curated `results_final/` snapshot (checkpoints, tables, figures verified against the thesis). Raw data and generated arrays should be restored locally before running the full pipeline.
+After extracting `results_final.zip`, you should have:
+
+```text
+results_final/
+```
+
+The repository itself only includes lightweight metadata and catalogs (`data/metadata/`, `data/interim/`) plus code and configs. Both zips above should be downloaded and extracted locally before running the full pipeline or inspecting the thesis-verified results.
 
 ## Recreate The Thesis Pipeline
 
@@ -159,7 +170,6 @@ python scripts/run_timeseries_analysis.py
 Main outputs:
 
 ```text
-reports/
 results/figures/eda/
 results/figures/eda_timeseries/
 results/tables/eda_stats.csv
@@ -168,6 +178,8 @@ results/tables/eda_split_diagnostics.csv
 results/tables/timeseries_channel_analysis.csv
 results/tables/timeseries_window_recommendations.csv
 ```
+
+`reports/` (EDA report summaries) is hand-maintained separately and not generated by these scripts.
 
 ### 5. Preprocess Windows
 
